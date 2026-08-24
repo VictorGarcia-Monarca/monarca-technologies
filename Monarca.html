@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monarca Technologies | Seguridad Vial Inteligente</title>
+    <!-- Fuentes de Google: Inter para un look tecnológico y profesional -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: '#0ea5e9',
+                        darkbg: '#050505', 
+                        darkcard: '#111111'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkbg text-gray-300 font-sans antialiased selection:bg-brand selection:text-white">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="fixed w-full top-0 z-50 backdrop-blur-md bg-darkbg/80 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo Empresa -->
+            <a href="#" class="flex items-center">
+                <img src="logo-monarca-tech.png" alt="Monarca Technologies" class="h-10 md:h-12 object-contain">
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#inicio" class="hover:text-brand transition-colors">Inicio</a>
+                <a href="#historia" class="hover:text-brand transition-colors">Historia</a>
+                <a href="#arquitectura" class="hover:text-brand transition-colors">Tecnología</a>
+                <a href="#colibri" class="hover:text-brand transition-colors">Colibrí IA</a>
+                <a href="#equipo" class="hover:text-brand transition-colors">Equipo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Banner Acueducto) -->
+    <section id="inicio" class="relative h-screen flex items-center justify-start bg-black">
+        <div class="absolute inset-0 z-0">
+            <img src="Acueducto.webp" alt="Acueducto de Morelia" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-r from-darkbg via-darkbg/80 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-darkbg to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full pt-20">
+            <div class="max-w-3xl">
+                <div class="flex items-center space-x-4 mb-6">
+                    <img src="logo-monarca-drive.png" alt="Monarca Drive Logo" class="h-16 object-contain rounded-lg">
+                    <span class="px-3 py-1 text-xs font-bold tracking-widest text-brand uppercase bg-brand/10 border border-brand/20 rounded-full">
+                        Ingeniería Michoacana
+                    </span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                    El futuro de la <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-cyan-400">Seguridad Vial.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 leading-relaxed mb-10 max-w-2xl">
+                    Monarca Drive previene accidentes por somnolencia y distracción utilizando Edge Computing y telemetría inercial. Desarrollado en Morelia para revolucionar las carreteras del mundo.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#arquitectura" class="px-8 py-4 rounded-lg bg-white text-black font-bold hover:bg-gray-200 transition-all shadow-[0_0_20px_rgba(14,165,233,0.3)]">
+                        Ver Arquitectura V5.0
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÉTRICAS -->
+    <section class="max-w-7xl mx-auto px-6 py-12 -mt-20 relative z-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="p-8 bg-darkcard/90 backdrop-blur border border-gray-800 rounded-xl shadow-2xl">
+                <p class="text-4xl font-extrabold text-white">>95%</p>
+                <p class="text-xs text-gray-500 mt-2 uppercase tracking-widest font-semibold">Precisión Val_Accuracy</p>
+            </div>
+            <div class="p-8 bg-darkcard/90 backdrop-blur border border-gray-800 rounded-xl shadow-2xl">
+                <p class="text-4xl font-extrabold text-white">20</p>
+                <p class="text-xs text-gray-500 mt-2 uppercase tracking-widest font-semibold">FPS (Proceso Real)</p>
+            </div>
+            <div class="p-8 bg-darkcard/90 backdrop-blur border border-gray-800 rounded-xl shadow-2xl">
+                <p class="text-4xl font-extrabold text-white">468</p>
+                <p class="text-xs text-gray-500 mt-2 uppercase tracking-widest font-semibold">Puntos Biométricos</p>
+            </div>
+            <div class="p-8 bg-darkcard/90 backdrop-blur border border-gray-800 rounded-xl shadow-2xl">
+                <p class="text-4xl font-extrabold text-white">0ms</p>
+                <p class="text-xs text-gray-500 mt-2 uppercase tracking-widest font-semibold">Latencia de Nube</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTRA HISTORIA -->
+    <section id="historia" class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <span class="text-xs font-semibold text-brand uppercase tracking-widest">El Origen</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-8">Tecnología con Propósito</h2>
+        <div class="bg-darkcard border border-gray-800 rounded-2xl p-8 md:p-12 relative shadow-lg text-left">
+            <div class="absolute top-4 left-6 text-6xl text-gray-800 font-serif opacity-50">"</div>
+            <p class="text-gray-300 leading-relaxed text-lg mb-6 relative z-10 italic">
+                Monarca Drive no nació en una sala de juntas, sino como respuesta directa a una realidad dolorosa. Tras la pérdida de un familiar en un accidente causado por somnolencia al volante, surgió una pregunta fundamental: <strong class="text-white">¿Por qué la tecnología que salva vidas está reservada solo para vehículos de gama alta?</strong>
+            </p>
+            <p class="text-gray-400 leading-relaxed relative z-10">
+                Desde los laboratorios del <strong>CBTis No. 149</strong>, canalizamos ese suceso hacia la ingeniería aplicada. Nuestro objetivo es democratizar el acceso a la seguridad vial mediante un sistema universal, de bajo costo y altamente preciso, diseñado para que cualquier conductor tenga una herramienta más para llegar a casa a salvo.
+            </p>
+        </div>
+    </section>
+
+    <!-- ARQUITECTURA -->
+    <section id="arquitectura" class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-800">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Arquitectura de Seguridad y Fusión de Sensores</h2>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Operando bajo un enfoque de procesamiento local ininterrumpido, el sistema utiliza una plataforma dual cuyo nodo central está basado en una Raspberry Pi 4. Este ecosistema de bajo costo democratiza la seguridad vial.
+                </p>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex items-start">
+                        <span class="text-brand font-bold mr-3 mt-1">01.</span>
+                        <p><strong>Telemetría Dinámica:</strong> Sensor inercial MPU-6050 para detectar cabeceos, volantazos y frenados bruscos.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-brand font-bold mr-3 mt-1">02.</span>
+                        <p><strong>Gestión Térmica Activa:</strong> Disipadores y ventilación para prevenir el <em>thermal throttling</em>.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-brand font-bold mr-3 mt-1">03.</span>
+                        <p><strong>Registro de Cabina:</strong> Pantalla OLED y escritura de bitácoras .csv en tiempo real.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-darkcard border border-gray-800 rounded-2xl p-8 relative overflow-hidden h-full min-h-[300px] flex items-center justify-center">
+                <div class="text-center text-gray-600">
+                    <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    <p class="text-sm uppercase tracking-widest font-semibold">Prototipo V7.4 Hardware Integrado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLIBRÍ IA -->
+    <section id="colibri" class="bg-darkcard border-y border-gray-800 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">El Motor Neuronal</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Colibrí IA es nuestro modelo propietario que reemplaza los obsoletos métodos de umbrales estáticos. Es el cerebro analítico que entiende la biometría humana en milisegundos.
+                    </p>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <img src="logo-colibri.png" alt="Colibrí IA" class="h-24 md:h-32 object-contain filter invert opacity-90">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-darkbg border border-gray-800 rounded-xl transition-colors hover:border-brand">
+                    <h3 class="text-xl font-bold text-white mb-3">Ensemble Learning</h3>
+                    <p class="text-sm text-gray-400">Dos Redes Neuronales Convolucionales (CNN) binarias e independientes para evitar el choque de clases entre el estado ocular y el bucal.</p>
+                </div>
+                <div class="p-6 bg-darkbg border border-gray-800 rounded-xl transition-colors hover:border-brand">
+                    <h3 class="text-xl font-bold text-white mb-3">Mitigación de Sesgos</h3>
+                    <p class="text-sm text-gray-400">Entrenado con 4,000 imágenes propietarias, aplicando <em>undersampling</em> para evitar falsos positivos en conductores con anteojos.</p>
+                </div>
+                <div class="p-6 bg-darkbg border border-gray-800 rounded-xl transition-colors hover:border-brand">
+                    <h3 class="text-xl font-bold text-white mb-3">Ejecución Multihilo</h3>
+                    <p class="text-sm text-gray-400">Pipeline asíncrono soportado por TensorFlow Lite que exprime los cuatro núcleos de la CPU para una experiencia libre de latencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EL EQUIPO -->
+    <section id="equipo" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ingeniería y Colaboración</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">El talento detrás del desarrollo de hardware, visión artificial y metodología de Monarca Technologies.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Desarrollador -->
+            <div class="p-8 bg-darkcard border border-brand/50 rounded-2xl text-center shadow-lg transition-transform hover:-translate-y-2 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand to-cyan-400"></div>
+                <div class="w-24 h-24 mx-auto bg-gray-800 rounded-full mb-6 flex items-center justify-center text-3xl font-bold text-gray-400 border-2 border-brand shadow-[0_0_15px_rgba(14,165,233,0.3)]">
+                    V
+                </div>
+                <h3 class="text-xl font-bold text-white">Víctor</h3>
+                <p class="text-brand text-sm font-semibold mb-4 tracking-wide uppercase">Fundador & Desarrollador Principal</p>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Estudiante de Mecatrónica en el CBTis No. 149. Arquitecto de hardware, programador de la versión V7.4 y creador del modelo Colibrí IA.
+                </p>
+            </div>
+
+            <!-- Asesor Técnico -->
+            <div class="p-8 bg-darkcard border border-gray-800 rounded-2xl text-center shadow-lg">
+                <div class="w-20 h-20 mx-auto bg-gray-900 rounded-full mb-6 flex items-center justify-center text-xl font-bold text-gray-600">
+                    RD
+                </div>
+                <h3 class="text-lg font-bold text-white">Prof. Raúl Armando Díaz M.</h3>
+                <p class="text-gray-500 text-sm font-semibold mb-4 tracking-wide uppercase">Asesor Técnico</p>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Guía experta en la validación de la arquitectura de hardware, integración de componentes electrónicos y lógica de programación.
+                </p>
+            </div>
+
+            <!-- Asesor Metodológico -->
+            <div class="p-8 bg-darkcard border border-gray-800 rounded-2xl text-center shadow-lg">
+                <div class="w-20 h-20 mx-auto bg-gray-900 rounded-full mb-6 flex items-center justify-center text-xl font-bold text-gray-600">
+                    MF
+                </div>
+                <h3 class="text-lg font-bold text-white">Prof. Miguel Ángel Flores M.</h3>
+                <p class="text-gray-500 text-sm font-semibold mb-4 tracking-wide uppercase">Asesor Metodológico</p>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Supervisión de la investigación, estructura del proyecto y alineación con los estándares científicos y académicos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-gray-900 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <img src="logo-monarca-tech.png" alt="Monarca Technologies" class="h-8 opacity-50 grayscale">
+            </div>
+            <div class="text-center md:text-right text-sm text-gray-600">
+                <p>© 2026 Monarca Technologies.</p>
+                <p>Diseñado e ingeniado en el CBTis 149, Morelia, Michoacán.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
